@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
 
@@ -15,10 +16,53 @@
         <img class="hero-image" src="img/websiteBG.jpg" alt="Grey Background" />
       </section>
       <section class="hero-text-box">
-        <h1 class="hero-heading">About</h1>
+        <h1 class="hero-heading">Scott Knapp</h1>
         <p class="hero-text">hi my name is scott knapp</p>
       </section>
     </header>
     <!--End hero Header-->
+
+    <!--Begin portfolio-->
+    <section class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a href="img/game 1.jfif" class="glightbox">
+            <img src="img/game 1.jfif" alt="game 1" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/game 2.jfif" class="glightbox">
+            <img src="img/game 2.jfif" alt="game 2" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/game 3.jfif" class="glightbox">
+            <img src="img/game 3.jfif" alt="game 3" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/game 4.jfif" class="glightbox">
+            <img src="img/game 4.jfif" alt="game 4" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/game 5.jfif" class="glightbox">
+            <img src="img/game 5.jfif" alt="game 5" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/game 6.jfif" class="glightbox">
+            <img src="img/game 6.jfif" alt="game 6" class="gallery-img"
+          /></a>
+        </div>
+      </section>
+    </section>
+    <!--End portfolio-->
+
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
