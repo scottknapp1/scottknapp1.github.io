@@ -74,7 +74,7 @@ video {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 25%;
-  text-align: right;
+  text-align: center;
   padding: 0 5%;
 }
 
