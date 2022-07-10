@@ -161,6 +161,84 @@ module.exports = isArray;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+var _interopRequireWildcard = __webpack_require__(18);
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  IX2EngineActionTypes: true,
+  IX2EngineConstants: true
+};
+exports.IX2EngineConstants = exports.IX2EngineActionTypes = void 0;
+
+var _triggerEvents = __webpack_require__(187);
+
+Object.keys(_triggerEvents).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _triggerEvents[key];
+    }
+  });
+});
+
+var _animationActions = __webpack_require__(94);
+
+Object.keys(_animationActions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _animationActions[key];
+    }
+  });
+});
+
+var _triggerInteractions = __webpack_require__(188);
+
+Object.keys(_triggerInteractions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _triggerInteractions[key];
+    }
+  });
+});
+
+var _reducedMotion = __webpack_require__(189);
+
+Object.keys(_reducedMotion).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _reducedMotion[key];
+    }
+  });
+});
+
+var IX2EngineActionTypes = _interopRequireWildcard(__webpack_require__(190));
+
+exports.IX2EngineActionTypes = IX2EngineActionTypes;
+
+var IX2EngineConstants = _interopRequireWildcard(__webpack_require__(191));
+
+exports.IX2EngineConstants = IX2EngineConstants;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
  // @wf-will-never-add-flow-to-this-file
 
 /* globals window, document, navigator, WEBFLOW_ENV_TEST */
@@ -494,84 +572,6 @@ $(Webflow.ready); // Listen for window.onload and resolve deferred
 bindLoad(); // Export commonjs module
 
 module.exports = window.Webflow = Webflow;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireWildcard = __webpack_require__(18);
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var _exportNames = {
-  IX2EngineActionTypes: true,
-  IX2EngineConstants: true
-};
-exports.IX2EngineConstants = exports.IX2EngineActionTypes = void 0;
-
-var _triggerEvents = __webpack_require__(187);
-
-Object.keys(_triggerEvents).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _triggerEvents[key];
-    }
-  });
-});
-
-var _animationActions = __webpack_require__(94);
-
-Object.keys(_animationActions).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _animationActions[key];
-    }
-  });
-});
-
-var _triggerInteractions = __webpack_require__(188);
-
-Object.keys(_triggerInteractions).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _triggerInteractions[key];
-    }
-  });
-});
-
-var _reducedMotion = __webpack_require__(189);
-
-Object.keys(_reducedMotion).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _reducedMotion[key];
-    }
-  });
-});
-
-var IX2EngineActionTypes = _interopRequireWildcard(__webpack_require__(190));
-
-exports.IX2EngineActionTypes = IX2EngineActionTypes;
-
-var IX2EngineConstants = _interopRequireWildcard(__webpack_require__(191));
-
-exports.IX2EngineConstants = IX2EngineConstants;
 
 /***/ }),
 /* 5 */
@@ -3195,7 +3195,7 @@ exports.mediaQueriesDefined = exports.viewportWidthChanged = exports.actionListP
 
 var _extends2 = _interopRequireDefault(__webpack_require__(30));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -6431,7 +6431,7 @@ exports.clearPlugin = exports.renderPlugin = exports.createPluginInstance = expo
 
 var _IX2LottieUtils = __webpack_require__(267);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _IX2BrowserSupport = __webpack_require__(48); // eslint-disable-next-line webflow/module-top-level-imports, webflow/packages-must-be-defined
 
@@ -6577,7 +6577,7 @@ var _forEach = _interopRequireDefault(__webpack_require__(302));
 
 var _throttle = _interopRequireDefault(__webpack_require__(305));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -7857,9 +7857,7 @@ __webpack_require__(331);
 __webpack_require__(332);
 __webpack_require__(333);
 __webpack_require__(334);
-__webpack_require__(339);
-__webpack_require__(340);
-module.exports = __webpack_require__(341);
+module.exports = __webpack_require__(335);
 
 
 /***/ }),
@@ -7877,7 +7875,7 @@ module.exports = __webpack_require__(341);
  * Webflow: Brand pages on the subdomain
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('brand', module.exports = function ($) {
   var api = {};
@@ -8343,7 +8341,7 @@ module.exports = function () {
  * Webflow: focus-visible
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 /*
  * This polyfill comes from https://github.com/WICG/focus-visible
  */
@@ -8630,7 +8628,7 @@ Webflow.define('focus-visible', module.exports = function () {
  * Webflow: focus-within
  */
 
-var Webflow = __webpack_require__(3); // polyfill based off of https://github.com/matteobad/focus-within-polyfill
+var Webflow = __webpack_require__(4); // polyfill based off of https://github.com/matteobad/focus-within-polyfill
 
 
 Webflow.define('focus-within', module.exports = function () {
@@ -8738,7 +8736,7 @@ Webflow.define('focus-within', module.exports = function () {
  * Webflow: focus
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 /*
  * Safari has a weird bug where it doesn't support :focus for links with hrefs,
  * buttons, and input[type=button|submit], so we listen for mousedown events
@@ -8924,7 +8922,7 @@ module.exports = api;
  * Webflow: Interactions 2
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var ix2 = __webpack_require__(137);
 
@@ -10171,7 +10169,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixData = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var IX2_RAW_DATA_IMPORTED = _constants.IX2EngineActionTypes.IX2_RAW_DATA_IMPORTED;
 
@@ -10568,7 +10566,7 @@ exports.ixRequest = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(30));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _timm = __webpack_require__(22);
 
@@ -10619,7 +10617,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixSession = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _timm = __webpack_require__(22);
 
@@ -13074,7 +13072,7 @@ exports.ixElements = void 0;
 
 var _timm = __webpack_require__(22);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _constants$IX2EngineC = _constants.IX2EngineConstants,
     HTML_ELEMENT = _constants$IX2EngineC.HTML_ELEMENT,
@@ -13323,7 +13321,7 @@ var _findLast = _interopRequireDefault(__webpack_require__(276));
 
 var _timm = __webpack_require__(22);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shallowEqual = _interopRequireDefault(__webpack_require__(278));
 
@@ -14955,7 +14953,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixInstances = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _shared = __webpack_require__(14);
 
@@ -15302,7 +15300,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ixParameters = void 0;
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _constants$IX2EngineA = _constants.IX2EngineActionTypes,
     IX2_RAW_DATA_IMPORTED = _constants$IX2EngineA.IX2_RAW_DATA_IMPORTED,
@@ -16559,7 +16557,7 @@ exports.getClosestElement = void 0;
 
 var _shared = __webpack_require__(14);
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 /* eslint-env browser */
 
 
@@ -16754,7 +16752,7 @@ var _get = _interopRequireDefault(__webpack_require__(60));
 
 var _clamp = _interopRequireDefault(__webpack_require__(329));
 
-var _constants = __webpack_require__(4);
+var _constants = __webpack_require__(3);
 
 var _IX2VanillaEngine = __webpack_require__(123);
 
@@ -18239,7 +18237,7 @@ module.exports = baseClamp;
  * Webflow: Auto-select links to current page or section
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('links', module.exports = function ($, _) {
   var api = {};
@@ -18369,7 +18367,7 @@ Webflow.define('links', module.exports = function ($, _) {
  * Webflow: Smooth scroll
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('scroll', module.exports = function ($) {
   /**
@@ -18626,7 +18624,7 @@ Webflow.define('scroll', module.exports = function ($) {
  * Adds a 'swipe' event to desktop and mobile
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 Webflow.define('touch', module.exports = function ($) {
   var api = {};
@@ -18757,681 +18755,6 @@ Webflow.define('touch', module.exports = function ($) {
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
-/* globals
-  window,
-  document,
-  FormData,
-  WEBFLOW_FORM_API_HOST,
-  WEBFLOW_FORM_OLDIE_HOST
-*/
-
-/* eslint-disable no-var */
-
-/**
- * Webflow: Forms
- */
-
-var _interopRequireDefault = __webpack_require__(1);
-
-var _slicedToArray2 = _interopRequireDefault(__webpack_require__(335));
-
-var Webflow = __webpack_require__(3);
-
-Webflow.define('forms', module.exports = function ($, _) {
-  var api = {};
-  var $doc = $(document);
-  var $forms;
-  var loc = window.location;
-  var retro = window.XDomainRequest && !window.atob;
-  var namespace = '.w-form';
-  var siteId;
-  var emailField = /e(-)?mail/i;
-  var emailValue = /^\S+@\S+$/;
-  var alert = window.alert;
-  var inApp = Webflow.env();
-  var listening;
-  var formUrl;
-  var signFileUrl; // MailChimp domains: list-manage.com + mirrors
-
-  var chimpRegex = /list-manage[1-9]?.com/i;
-
-  var disconnected = _.debounce(function () {
-    alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
-  }, 100);
-
-  api.ready = api.design = api.preview = function () {
-    // Init forms
-    init(); // Wire document events on published site only once
-
-    if (!inApp && !listening) {
-      addListeners();
-    }
-  };
-
-  function init() {
-    siteId = $('html').attr('data-wf-site');
-    formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
-
-    if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "http://formdata.webflow.com");
-    }
-
-    signFileUrl = "".concat(formUrl, "/signFile");
-    $forms = $(namespace + ' form');
-
-    if (!$forms.length) {
-      return;
-    }
-
-    $forms.each(build);
-  }
-
-  function build(i, el) {
-    // Store form state using namespace
-    var $el = $(el);
-    var data = $.data(el, namespace);
-
-    if (!data) {
-      data = $.data(el, namespace, {
-        form: $el
-      });
-    } // data.form
-
-
-    reset(data);
-    var wrap = $el.closest('div.w-form');
-    data.done = wrap.find('> .w-form-done');
-    data.fail = wrap.find('> .w-form-fail');
-    data.fileUploads = wrap.find('.w-file-upload');
-    data.fileUploads.each(function (j) {
-      initFileUpload(j, data);
-    }); // Accessiblity fixes
-
-    var formName = data.form.attr('aria-label') || data.form.attr('data-name') || 'Form';
-
-    if (!data.done.attr('aria-label')) {
-      data.form.attr('aria-label', formName);
-    }
-
-    data.done.attr('tabindex', '-1');
-    data.done.attr('role', 'region');
-
-    if (!data.done.attr('aria-label')) {
-      data.done.attr('aria-label', formName + ' success');
-    }
-
-    data.fail.attr('tabindex', '-1');
-    data.fail.attr('role', 'region');
-
-    if (!data.fail.attr('aria-label')) {
-      data.fail.attr('aria-label', formName + ' failure');
-    }
-
-    var action = data.action = $el.attr('action');
-    data.handler = null;
-    data.redirect = $el.attr('data-redirect'); // MailChimp form
-
-    if (chimpRegex.test(action)) {
-      data.handler = submitMailChimp;
-      return;
-    } // Custom form action
-
-
-    if (action) {
-      return;
-    } // Webflow forms for hosting accounts
-
-
-    if (siteId) {
-      data.handler = typeof hostedSubmitWebflow === 'function' ? hostedSubmitWebflow : exportedSubmitWebflow;
-      return;
-    } // Alert for disconnected Webflow forms
-
-
-    disconnected();
-  }
-
-  function addListeners() {
-    listening = true; // Handle form submission for Webflow forms
-
-    $doc.on('submit', namespace + ' form', function (evt) {
-      var data = $.data(this, namespace);
-
-      if (data.handler) {
-        data.evt = evt;
-        data.handler(data);
-      }
-    }); // handle checked ui for custom checkbox and radio button
-
-    var CHECKBOX_CLASS_NAME = '.w-checkbox-input';
-    var RADIO_INPUT_CLASS_NAME = '.w-radio-input';
-    var CHECKED_CLASS = 'w--redirected-checked';
-    var FOCUSED_CLASS = 'w--redirected-focus';
-    var FOCUSED_VISIBLE_CLASS = 'w--redirected-focus-visible';
-    var focusVisibleSelectors = ':focus-visible, [data-wf-focus-visible]';
-    var CUSTOM_CONTROLS = [['checkbox', CHECKBOX_CLASS_NAME], ['radio', RADIO_INPUT_CLASS_NAME]];
-    $doc.on('change', namespace + " form input[type=\"checkbox\"]:not(" + CHECKBOX_CLASS_NAME + ')', function (evt) {
-      $(evt.target).siblings(CHECKBOX_CLASS_NAME).toggleClass(CHECKED_CLASS);
-    });
-    $doc.on('change', namespace + " form input[type=\"radio\"]", function (evt) {
-      $("input[name=\"".concat(evt.target.name, "\"]:not(").concat(CHECKBOX_CLASS_NAME, ")")).map(function (i, el) {
-        return $(el).siblings(RADIO_INPUT_CLASS_NAME).removeClass(CHECKED_CLASS);
-      });
-      var $target = $(evt.target);
-
-      if (!$target.hasClass('w-radio-input')) {
-        $target.siblings(RADIO_INPUT_CLASS_NAME).addClass(CHECKED_CLASS);
-      }
-    });
-    CUSTOM_CONTROLS.forEach(function (_ref) {
-      var _ref2 = (0, _slicedToArray2["default"])(_ref, 2),
-          controlType = _ref2[0],
-          customControlClassName = _ref2[1];
-
-      $doc.on('focus', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
-        $(evt.target).siblings(customControlClassName).addClass(FOCUSED_CLASS);
-        $(evt.target).filter(focusVisibleSelectors).siblings(customControlClassName).addClass(FOCUSED_VISIBLE_CLASS);
-      });
-      $doc.on('blur', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
-        $(evt.target).siblings(customControlClassName).removeClass("".concat(FOCUSED_CLASS, " ").concat(FOCUSED_VISIBLE_CLASS));
-      });
-    });
-  } // Reset data common to all submit handlers
-
-
-  function reset(data) {
-    var btn = data.btn = data.form.find(':input[type="submit"]');
-    data.wait = data.btn.attr('data-wait') || null;
-    data.success = false;
-    btn.prop('disabled', false);
-    data.label && btn.val(data.label);
-  } // Disable submit button
-
-
-  function disableBtn(data) {
-    var btn = data.btn;
-    var wait = data.wait;
-    btn.prop('disabled', true); // Show wait text and store previous label
-
-    if (wait) {
-      data.label = btn.val();
-      btn.val(wait);
-    }
-  } // Find form fields, validate, and set value pairs
-
-
-  function findFields(form, result) {
-    var status = null;
-    result = result || {}; // The ":input" selector is a jQuery shortcut to select all inputs, selects, textareas
-
-    form.find(':input:not([type="submit"]):not([type="file"])').each(function (i, el) {
-      var field = $(el);
-      var type = field.attr('type');
-      var name = field.attr('data-name') || field.attr('name') || 'Field ' + (i + 1);
-      var value = field.val();
-
-      if (type === 'checkbox') {
-        value = field.is(':checked');
-      } else if (type === 'radio') {
-        // Radio group value already processed
-        if (result[name] === null || typeof result[name] === 'string') {
-          return;
-        }
-
-        value = form.find('input[name="' + field.attr('name') + '"]:checked').val() || null;
-      }
-
-      if (typeof value === 'string') {
-        value = $.trim(value);
-      }
-
-      result[name] = value;
-      status = status || getStatus(field, type, name, value);
-    });
-    return status;
-  }
-
-  function findFileUploads(form) {
-    var result = {};
-    form.find(':input[type="file"]').each(function (i, el) {
-      var field = $(el);
-      var name = field.attr('data-name') || field.attr('name') || 'File ' + (i + 1);
-      var value = field.attr('data-value');
-
-      if (typeof value === 'string') {
-        value = $.trim(value);
-      }
-
-      result[name] = value;
-    });
-    return result;
-  }
-
-  var trackingCookieNameMap = {
-    _mkto_trk: 'marketo' // __hstc: 'hubspot',
-
-  };
-
-  function collectEnterpriseTrackingCookies() {
-    var cookies = document.cookie.split('; ').reduce(function (acc, cookie) {
-      var splitCookie = cookie.split('=');
-      var name = splitCookie[0];
-
-      if (name in trackingCookieNameMap) {
-        var mappedName = trackingCookieNameMap[name];
-        var value = splitCookie.slice(1).join('=');
-        acc[mappedName] = value;
-      }
-
-      return acc;
-    }, {});
-    return cookies;
-  }
-
-  function getStatus(field, type, name, value) {
-    var status = null;
-
-    if (type === 'password') {
-      status = 'Passwords cannot be submitted.';
-    } else if (field.attr('required')) {
-      if (!value) {
-        status = 'Please fill out the required field: ' + name;
-      } else if (emailField.test(field.attr('type'))) {
-        if (!emailValue.test(value)) {
-          status = 'Please enter a valid email address for: ' + name;
-        }
-      }
-    } else if (name === 'g-recaptcha-response' && !value) {
-      status = 'Please confirm you’re not a robot.';
-    }
-
-    return status;
-  }
-
-  function exportedSubmitWebflow(data) {
-    preventDefault(data);
-    afterSubmit(data);
-  } // Submit form to MailChimp
-
-
-  function submitMailChimp(data) {
-    reset(data);
-    var form = data.form;
-    var payload = {}; // Skip Ajax submission if http/s mismatch, fallback to POST instead
-
-    if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
-      form.attr('method', 'post');
-      return;
-    }
-
-    preventDefault(data); // Find & populate all fields
-
-    var status = findFields(form, payload);
-
-    if (status) {
-      return alert(status);
-    } // Disable submit button
-
-
-    disableBtn(data); // Use special format for MailChimp params
-
-    var fullName;
-
-    _.each(payload, function (value, key) {
-      if (emailField.test(key)) {
-        payload.EMAIL = value;
-      }
-
-      if (/^((full[ _-]?)?name)$/i.test(key)) {
-        fullName = value;
-      }
-
-      if (/^(first[ _-]?name)$/i.test(key)) {
-        payload.FNAME = value;
-      }
-
-      if (/^(last[ _-]?name)$/i.test(key)) {
-        payload.LNAME = value;
-      }
-    });
-
-    if (fullName && !payload.FNAME) {
-      fullName = fullName.split(' ');
-      payload.FNAME = fullName[0];
-      payload.LNAME = payload.LNAME || fullName[1];
-    } // Use the (undocumented) MailChimp jsonp api
-
-
-    var url = data.action.replace('/post?', '/post-json?') + '&c=?'; // Add special param to prevent bot signups
-
-    var userId = url.indexOf('u=') + 2;
-    userId = url.substring(userId, url.indexOf('&', userId));
-    var listId = url.indexOf('id=') + 3;
-    listId = url.substring(listId, url.indexOf('&', listId));
-    payload['b_' + userId + '_' + listId] = '';
-    $.ajax({
-      url: url,
-      data: payload,
-      dataType: 'jsonp'
-    }).done(function (resp) {
-      data.success = resp.result === 'success' || /already/.test(resp.msg);
-
-      if (!data.success) {
-        console.info('MailChimp error: ' + resp.msg);
-      }
-
-      afterSubmit(data);
-    }).fail(function () {
-      afterSubmit(data);
-    });
-  } // Common callback which runs after all Ajax submissions
-
-
-  function afterSubmit(data) {
-    var form = data.form;
-    var redirect = data.redirect;
-    var success = data.success; // Redirect to a success url if defined
-
-    if (success && redirect) {
-      Webflow.location(redirect);
-      return;
-    } // Show or hide status divs
-
-
-    data.done.toggle(success);
-    data.fail.toggle(!success);
-
-    if (success) {
-      data.done.focus();
-    } else {
-      data.fail.focus();
-    } // Hide form on success
-
-
-    form.toggle(!success); // Reset data and enable submit button
-
-    reset(data);
-  }
-
-  function preventDefault(data) {
-    data.evt && data.evt.preventDefault();
-    data.evt = null;
-  }
-
-  function initFileUpload(i, form) {
-    if (!form.fileUploads || !form.fileUploads[i]) {
-      return;
-    }
-
-    var file;
-    var $el = $(form.fileUploads[i]);
-    var $defaultWrap = $el.find('> .w-file-upload-default');
-    var $uploadingWrap = $el.find('> .w-file-upload-uploading');
-    var $successWrap = $el.find('> .w-file-upload-success');
-    var $errorWrap = $el.find('> .w-file-upload-error');
-    var $input = $defaultWrap.find('.w-file-upload-input');
-    var $label = $defaultWrap.find('.w-file-upload-label');
-    var $labelChildren = $label.children();
-    var $errorMsgEl = $errorWrap.find('.w-file-upload-error-msg');
-    var $fileEl = $successWrap.find('.w-file-upload-file');
-    var $removeEl = $successWrap.find('.w-file-remove-link');
-    var $fileNameEl = $fileEl.find('.w-file-upload-file-name');
-    var sizeErrMsg = $errorMsgEl.attr('data-w-size-error');
-    var typeErrMsg = $errorMsgEl.attr('data-w-type-error');
-    var genericErrMsg = $errorMsgEl.attr('data-w-generic-error'); // Accessiblity fixes
-    // The file upload Input is not stylable by the designer, so we are
-    // going to pretend the Label is the input. ¯\_(ツ)_/¯
-
-    if (!inApp) {
-      $label.on('click keydown', function (e) {
-        if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
-          return;
-        }
-
-        e.preventDefault();
-        $input.click();
-      });
-    } // Both of these are added through CSS
-
-
-    $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
-    $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
-
-    if (!inApp) {
-      $removeEl.on('click keydown', function (e) {
-        if (e.type === 'keydown') {
-          if (e.which !== 13 && e.which !== 32) {
-            return;
-          }
-
-          e.preventDefault();
-        }
-
-        $input.removeAttr('data-value');
-        $input.val('');
-        $fileNameEl.html('');
-        $defaultWrap.toggle(true);
-        $successWrap.toggle(false);
-        $label.focus();
-      });
-      $input.on('change', function (e) {
-        file = e.target && e.target.files && e.target.files[0];
-
-        if (!file) {
-          return;
-        } // Show uploading
-
-
-        $defaultWrap.toggle(false);
-        $errorWrap.toggle(false);
-        $uploadingWrap.toggle(true);
-        $uploadingWrap.focus(); // Set filename
-
-        $fileNameEl.text(file.name); // Disable submit button
-
-        if (!isUploading()) {
-          disableBtn(form);
-        }
-
-        form.fileUploads[i].uploading = true;
-        signFile(file, afterSign);
-      }); // Setting input width 1px and height equal label
-      // This is so the browser required error will show up
-
-      var height = $label.outerHeight();
-      $input.height(height);
-      $input.width(1);
-    } else {
-      $input.on('click', function (e) {
-        e.preventDefault();
-      });
-      $label.on('click', function (e) {
-        e.preventDefault();
-      });
-      $labelChildren.on('click', function (e) {
-        e.preventDefault();
-      });
-    }
-
-    function parseError(err) {
-      var errorMsg = err.responseJSON && err.responseJSON.msg;
-      var userError = genericErrMsg;
-
-      if (typeof errorMsg === 'string' && errorMsg.indexOf('InvalidFileTypeError') === 0) {
-        userError = typeErrMsg;
-      } else if (typeof errorMsg === 'string' && errorMsg.indexOf('MaxFileSizeError') === 0) {
-        userError = sizeErrMsg;
-      }
-
-      $errorMsgEl.text(userError);
-      $input.removeAttr('data-value');
-      $input.val('');
-      $uploadingWrap.toggle(false);
-      $defaultWrap.toggle(true);
-      $errorWrap.toggle(true);
-      $errorWrap.focus();
-      form.fileUploads[i].uploading = false;
-
-      if (!isUploading()) {
-        reset(form);
-      }
-    }
-
-    function afterSign(err, data) {
-      if (err) {
-        return parseError(err);
-      }
-
-      var fileName = data.fileName;
-      var postData = data.postData;
-      var fileId = data.fileId;
-      var s3Url = data.s3Url;
-      $input.attr('data-value', fileId);
-      uploadS3(s3Url, postData, file, fileName, afterUpload);
-    }
-
-    function afterUpload(err) {
-      if (err) {
-        return parseError(err);
-      } // Show success
-
-
-      $uploadingWrap.toggle(false);
-      $successWrap.css('display', 'inline-block');
-      $successWrap.focus();
-      form.fileUploads[i].uploading = false;
-
-      if (!isUploading()) {
-        reset(form);
-      }
-    }
-
-    function isUploading() {
-      var uploads = form.fileUploads && form.fileUploads.toArray() || [];
-      return uploads.some(function (value) {
-        return value.uploading;
-      });
-    }
-  }
-
-  function signFile(file, cb) {
-    var payload = {
-      name: file.name,
-      size: file.size
-    };
-    $.ajax({
-      type: 'POST',
-      url: signFileUrl,
-      data: payload,
-      dataType: 'json',
-      crossDomain: true
-    }).done(function (data) {
-      cb(null, data);
-    }).fail(function (err) {
-      cb(err);
-    });
-  }
-
-  function uploadS3(url, data, file, fileName, cb) {
-    var formData = new FormData();
-
-    for (var k in data) {
-      formData.append(k, data[k]);
-    }
-
-    formData.append('file', file, fileName);
-    $.ajax({
-      type: 'POST',
-      url: url,
-      data: formData,
-      processData: false,
-      contentType: false
-    }).done(function () {
-      cb(null);
-    }).fail(function (err) {
-      cb(err);
-    });
-  } // Export module
-
-
-  return api;
-});
-
-/***/ }),
-/* 335 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(336);
-
-var iterableToArrayLimit = __webpack_require__(337);
-
-var nonIterableRest = __webpack_require__(338);
-
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
-}
-
-module.exports = _slicedToArray;
-
-/***/ }),
-/* 336 */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-module.exports = _arrayWithHoles;
-
-/***/ }),
-/* 337 */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(arr, i) {
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-module.exports = _iterableToArrayLimit;
-
-/***/ }),
-/* 338 */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-
-module.exports = _nonIterableRest;
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
- // @wf-will-never-add-flow-to-this-file
-
 /* globals window, document */
 
 /* eslint-disable no-var */
@@ -19440,7 +18763,7 @@ module.exports = _nonIterableRest;
  * Webflow: Navbar component
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var IXEvents = __webpack_require__(39);
 
@@ -20025,7 +19348,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 340 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20039,7 +19362,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
  * Webflow: Tabs component
  */
 
-var Webflow = __webpack_require__(3);
+var Webflow = __webpack_require__(4);
 
 var IXEvents = __webpack_require__(39);
 
@@ -20375,225 +19698,6 @@ Webflow.define('tabs', module.exports = function ($) {
     }).start({
       opacity: 1
     });
-  } // Export module
-
-
-  return api;
-});
-
-/***/ }),
-/* 341 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
- // @wf-will-never-add-flow-to-this-file
-
-/* globals window, document */
-
-/* eslint-disable no-var */
-
-/**
- * Webflow: Maps widget
- */
-
-var Webflow = __webpack_require__(3);
-
-Webflow.define('maps', module.exports = function ($, _) {
-  var api = {};
-  var $doc = $(document);
-  var google = null;
-  var $maps;
-  var namespace = '.w-widget-map'; // The API key is injected here from the Webflow Integrations tab on the site's dashboard
-
-  var googleMapsApiKey = ''; // -----------------------------------
-  // Module methods
-
-  api.ready = function () {
-    // Init Maps on the front-end
-    if (!Webflow.env()) {
-      initMaps();
-    }
-  };
-
-  api.destroy = removeListeners; // -----------------------------------
-  // Private methods
-
-  function initMaps() {
-    $maps = $doc.find(namespace);
-
-    if (!$maps.length) {
-      return;
-    }
-
-    if (google === null) {
-      $.getScript('https://maps.googleapis.com/maps/api/js?v=3.31&sensor=false&callback=_wf_maps_loaded&key=' + googleMapsApiKey);
-      window._wf_maps_loaded = mapsLoaded;
-    } else {
-      mapsLoaded();
-    }
-
-    function mapsLoaded() {
-      window._wf_maps_loaded = function () {};
-
-      google = window.google;
-      $maps.each(renderMap);
-      removeListeners();
-      addListeners();
-    }
-  }
-
-  function removeListeners() {
-    Webflow.resize.off(resizeMaps);
-    Webflow.redraw.off(resizeMaps);
-  }
-
-  function addListeners() {
-    Webflow.resize.on(resizeMaps);
-    Webflow.redraw.on(resizeMaps);
-  } // Render map onto each element
-
-
-  function renderMap(i, el) {
-    var data = $(el).data();
-    getState(el, data);
-  }
-
-  function resizeMaps() {
-    $maps.each(resizeMap);
-  } // Resize map when window changes
-
-
-  function resizeMap(i, el) {
-    var state = getState(el);
-    google.maps.event.trigger(state.map, 'resize');
-    state.setMapPosition();
-  } // Store state on element data
-
-
-  var store = 'w-widget-map';
-
-  function getState(el, data) {
-    var state = $.data(el, store);
-
-    if (state) {
-      return state;
-    }
-
-    var hasTooltip = typeof data.widgetTooltip === 'string' && data.widgetTooltip !== '';
-    var $el = $(el);
-    var title = $el.attr('title');
-    var markerTitle = 'Map pin';
-
-    if (title && data.widgetTooltip) {
-      markerTitle = "Map pin on ".concat(title, " showing location of ").concat(data.widgetTooltip);
-    } else if (title && !data.widgetTooltip) {
-      markerTitle = "Map pin on ".concat(title);
-    } else if (!title && data.widgetTooltip) {
-      markerTitle = "Map pin showing location of ".concat(data.widgetTooltip);
-    }
-
-    state = $.data(el, store, {
-      // Default options
-      latLng: '51.511214,-0.119824',
-      tooltip: '',
-      style: 'roadmap',
-      zoom: 12,
-      // Marker
-      marker: new google.maps.Marker({
-        draggable: false,
-        title: markerTitle
-      }),
-      // Tooltip infowindow
-      infowindow: new google.maps.InfoWindow({
-        disableAutoPan: true
-      })
-    }); // LatLng center point
-
-    if (typeof data.widgetLatlng === 'string' && data.widgetLatlng.length !== '') {
-      state.latLng = data.widgetLatlng;
-    }
-
-    var coords = state.latLng.split(',');
-    var latLngObj = new google.maps.LatLng(coords[0], coords[1]);
-    state.latLngObj = latLngObj; // Disable touch events
-
-    var mapDraggable = !(Webflow.env.touch && !data.enableTouch); // Map instance
-
-    state.map = new google.maps.Map(el, {
-      center: state.latLngObj,
-      zoom: state.zoom,
-      maxZoom: 20,
-      mapTypeControl: false,
-      panControl: false,
-      streetViewControl: false,
-      scrollwheel: data.enableScroll,
-      draggable: mapDraggable,
-      zoomControl: true,
-      zoomControlOptions: {
-        style: google.maps.ZoomControlStyle.SMALL
-      },
-      mapTypeId: state.style
-    });
-    state.marker.setMap(state.map); // Set map position and offset
-
-    state.setMapPosition = function () {
-      state.map.setCenter(state.latLngObj);
-      var offsetX = 0;
-      var offsetY = 0;
-      var padding = $el.css(['paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft']);
-      offsetX -= parseInt(padding.paddingLeft, 10);
-      offsetX += parseInt(padding.paddingRight, 10);
-      offsetY -= parseInt(padding.paddingTop, 10);
-      offsetY += parseInt(padding.paddingBottom, 10);
-
-      if (offsetX || offsetY) {
-        state.map.panBy(offsetX, offsetY);
-      }
-
-      $el.css('position', ''); // Remove injected position
-    }; // Fix position after first tiles have loaded
-
-
-    google.maps.event.addListener(state.map, 'tilesloaded', function () {
-      google.maps.event.clearListeners(state.map, 'tilesloaded');
-      state.setMapPosition();
-    }); // Set initial position
-
-    state.setMapPosition();
-    state.marker.setPosition(state.latLngObj);
-    state.infowindow.setPosition(state.latLngObj); // Draw tooltip
-
-    if (hasTooltip) {
-      var tooltip = data.widgetTooltip;
-      state.tooltip = tooltip;
-      state.infowindow.setContent(tooltip);
-
-      if (!state.infowindowOpen) {
-        state.infowindow.open(state.map, state.marker);
-        state.infowindowOpen = true;
-      }
-    } // Map style - options.style
-
-
-    var style = data.widgetStyle;
-
-    if (style) {
-      state.map.setMapTypeId(style);
-    } // Zoom - options.zoom
-
-
-    var zoom = data.widgetZoom;
-
-    if (zoom != null) {
-      state.zoom = zoom;
-      state.map.setZoom(Number(zoom));
-    } // Click marker to open in google maps
-
-
-    google.maps.event.addListener(state.marker, 'click', function () {
-      window.open('https://maps.google.com/?z=' + state.zoom + '&daddr=' + state.latLng);
-    });
-    return state;
   } // Export module
 
 
