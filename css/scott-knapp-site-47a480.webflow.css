@@ -966,6 +966,46 @@ p {
   font-weight: 400;
 }
 
+.button-2 {
+  position: relative;
+  left: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: inline-block;
+  width: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  float: left;
+  clear: left;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.div-block {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
 @media screen and (max-width: 991px) {
   .navigation-link {
     color: hsla(0, 0%, 100%, 0.52);
