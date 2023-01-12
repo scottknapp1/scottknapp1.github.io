@@ -60,8 +60,11 @@
   background: url("../img/baguette-img.png");
 }
 .Cv {
-  height: 1000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .CVBody {
-  height: 1000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: 0;
 }
