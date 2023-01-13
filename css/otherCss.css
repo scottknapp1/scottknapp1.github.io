@@ -6,14 +6,9 @@
   user-select: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
-  }
-  .objectCV {
-    width: 100%;
-    margin: 10px;
-    height: 100%;
   }
 }
 
@@ -63,17 +58,4 @@
 
 .baguette-img {
   background: url("../img/baguette-img.png");
-}
-.Cv {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.CVBody {
-  height: 100vh;
-  scrollbar-width: 0;
-}
-.objectCV {
-  width: 100%;
-  margin: 10px;
-  height: 100%;
 }
