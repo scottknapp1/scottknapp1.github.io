@@ -10,6 +10,10 @@
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+  .objectCV {
+    min-height: 100%;
+    width: 100%;
+  }
 }
 
 .b-example-divider {
@@ -67,4 +71,8 @@
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: 0;
+}
+.objectCV {
+  min-height: 100vh;
+  width: 100%;
 }
